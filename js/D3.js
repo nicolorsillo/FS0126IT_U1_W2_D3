@@ -250,3 +250,58 @@ console.log(charactersNames.length)
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+
+const a = Math.ceil(Math.random() * 10) - 1
+const b = Math.ceil(Math.random() * 8) - 1
+const c = [
+  "name",
+  "height",
+  "mass",
+  "hair_color",
+  "skin_color",
+  "eye_color",
+  "birth_year",
+  "gender",
+]
+
+switch (c[b]) {
+  case "name":
+    console.log("il personaggio", a, "si chiama", starWarsCharacters[a][c[b]])
+    break
+  case "height":
+    console.log("il personaggio", a, "è alto", starWarsCharacters[a][c[b]])
+    break
+  case "mass":
+    console.log("il personaggio", a, "pesa", starWarsCharacters[a][c[b]])
+    break
+  case "hair_color":
+    console.log(
+      "il personaggio",
+      a,
+      "ha i capelli di colore",
+      starWarsCharacters[a][c[b]],
+    )
+    break
+  case "skin_color":
+    console.log(
+      "il personaggio",
+      a,
+      "ha la pelle di colore",
+      starWarsCharacters[a][c[b]],
+    )
+    break
+  case "eye_color":
+    console.log(
+      "il personaggio",
+      a,
+      "ha gli occhi di colore",
+      starWarsCharacters[a][c[b]],
+    )
+    break
+  case "birth_year":
+    console.log("il personaggio", a, "è nato nel", starWarsCharacters[a][c[b]])
+    break
+  case "gender":
+    console.log("il personaggio", a, "è di genere", starWarsCharacters[a][c[b]])
+    break
+}
